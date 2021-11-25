@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>1606</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var a 
+        a = prompt('Nhap a=')
+        var b
+        b = prompt('Nhap b=')
+        var c
+        c = prompt('Nhap c=')
+        var d = (b * b) - (4 * a * c)
+
+        if(a == 0) {
+         if(b == 0) {
+            if (c == 0) {
+                document.write('Phuong trinh co vo so nghiem')
+                } 
+            else{
+                document.write('Phuong trinh vo nghiem')
+                }
+            } 
+            else {
+                document.write('Phuong trinh co nghiem duy nhat:x= '+(-c/b))
+            }
+        } 
+        else{
+        if (d > 0) {
+            document.write('Phuong trinh co hai nghiem rieng biet:')
+            document.write('<br')
+            document.write('x1='+ ((-b + Math.sqrt(d)) / (2 * a)))
+            document.write('<br>')
+            document.write('x2=' + ((-b - Math.sqrt(d)) / (2 * a)))
+        }
+        else if (d == 0){
+            document.write('Phuong trinh co nghiem duy nhat:')
+            document.write('<br')
+            document.write('x=' + ((-b ) / (2 * a)))
+        }
+        else if (d < 0) {
+            document.write('Phuong trinh vo nghiem')
+        }
+    }
+        </script>
+    </body>
+</html>
